@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle, Code, Layers, LayoutTemplate, XCircle, Check, Terminal, Zap, BarChart3, Settings, Truck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { usePageMeta } from '@/src/hooks/usePageMeta';
@@ -57,10 +57,10 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed"
+            className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            Diseñamos, estructuramos y desarrollamos sistemas a medida para empresas que necesitan salir de Excel, WhatsApp y procesos manuales.
-            <span className="block mt-4 text-white font-medium">Menos caos operativo. Más trazabilidad, velocidad y control.</span>
+            Para empresas que ya crecieron y necesitan salir del Excel, WhatsApp y los procesos manuales.{' '}
+            <span className="text-white font-medium">Menos caos. Más control.</span>
           </motion.p>
 
           <motion.div
@@ -105,15 +105,10 @@ export default function Home() {
                 <strong className="text-white block mt-2 text-xl">Tienen un problema de estructura.</strong>
               </p>
               <p>
-                Procesos repartidos entre Excel, WhatsApp, mails y personas que “ya saben cómo se hace”.
-                Datos duplicados. Errores manuales. Falta de trazabilidad. Decisiones sin visibilidad real.
-              </p>
-              <p>
-                Y cuando el volumen aumenta, también aumentan los desvíos, la dependencia del equipo y el costo operativo.
+                Procesos en Excel, WhatsApp y personas clave. Datos duplicados. Sin trazabilidad. Cuando crece el volumen, crecen los desvíos y los costos.
               </p>
               <div className="p-6 bg-emerald-500/5 border-l-4 border-emerald-500 rounded-r-xl text-emerald-400 text-lg font-medium">
-                No necesitás más herramientas sueltas.
-                Necesitás un sistema pensado para cómo funciona tu negocio de verdad.
+                Necesitás un sistema pensado para cómo funciona tu negocio.
               </div>
             </div>
           </motion.div>
@@ -188,7 +183,7 @@ export default function Home() {
               <span className="text-slate-500">Diseñamos soluciones para destrabar la operación.</span>
             </h2>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed">
-              Trabajamos con empresas, equipos operativos y founders que necesitan transformar un proceso manual o una idea difusa en una solución concreta, usable y escalable.
+              Para equipos que necesitan convertir un proceso manual en una solución concreta y escalable.
             </p>
           </div>
 
@@ -241,8 +236,7 @@ export default function Home() {
 
           <div className="text-center max-w-3xl mx-auto p-8 bg-emerald-500/5 border border-emerald-500/10 rounded-3xl backdrop-blur-sm">
             <p className="text-lg md:text-xl text-slate-300">
-              El objetivo no es “tener una app”. <br />
-              <span className="text-emerald-400 font-bold block mt-2">El objetivo es resolver un problema real con un sistema que sí sirva en la práctica.</span>
+              No se trata de tener una app. <span className="text-emerald-400 font-bold block mt-2">Se trata de resolver el problema real con un sistema que funcione.</span>
             </p>
           </div>
         </div>
@@ -254,8 +248,7 @@ export default function Home() {
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Un proceso claro</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg md:text-xl">
-              Para pasar del caos operativo a una solución real. <br />
-              <span className="text-white font-medium">Trabajamos con una lógica simple: entender, recortar y construir.</span>
+              Entender, recortar y construir. <span className="text-white font-medium">Simple.</span>
             </p>
           </div>
 
@@ -270,19 +263,19 @@ export default function Home() {
               {
                 step: "01",
                 title: "Diagnóstico y criterio",
-                desc: "Entendemos tu operación actual, detectamos cuellos de botella y definimos dónde se pierde tiempo, dinero o control.",
+                desc: "Mapeamos tu operación, detectamos cuellos de botella y definimos dónde se pierde tiempo o control.",
                 icon: <Settings className="w-8 h-8 text-emerald-500" />
               },
               {
                 step: "02",
                 title: "Definición del sistema",
-                desc: "Traducimos el problema en una estructura concreta: alcance, MVP, reglas operativas, backlog y prioridades.",
+                desc: "Traducimos el problema en estructura: alcance, MVP y prioridades concretas.",
                 icon: <LayoutTemplate className="w-8 h-8 text-emerald-500" />
               },
               {
                 step: "03",
                 title: "Implementación y evolución",
-                desc: "Desarrollamos la solución, automatizamos lo repetitivo y mejoramos por iteraciones con foco en impacto real.",
+                desc: "Desarrollamos, automatizamos lo repetitivo y mejoramos por iteraciones con foco en impacto.",
                 icon: <Layers className="w-8 h-8 text-emerald-500" />
               }
             ].map((item, i) => (
@@ -304,7 +297,7 @@ export default function Home() {
           </motion.div>
 
           <div className="text-center text-slate-500 font-mono text-sm uppercase tracking-widest">
-            Sin roadmap eterno. Sin complejidad innecesaria. Sin venderte más de lo que necesitás.
+            Sin roadmap eterno. Sin complejidad innecesaria.
           </div>
         </div>
       </section>
@@ -403,7 +396,7 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-lg text-slate-400 leading-relaxed">
-                Empresas que ya validaron su modelo de negocio pero necesitan estructura tecnológica para poder escalar sin romper la operación.
+                Modelos validados que necesitan estructura tecnológica para escalar sin romper lo que funciona.
               </p>
             </div>
           </div>
@@ -419,9 +412,7 @@ export default function Home() {
                 Estrategia, criterio de producto y ejecución en un mismo proceso
               </h2>
               <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-                La mayoría elige entre dos extremos: o una consultoría que piensa pero no construye, o desarrollo que construye sin suficiente criterio.
-                <br /><br />
-                <span className="text-white font-bold text-xl">En Brelio unificamos ambas partes.</span>
+                O consultoras que piensan pero no construyen, o desarrollo sin criterio de negocio. <span className="text-white font-bold text-xl">En Brelio, unificamos ambas partes.</span>
               </p>
               
               <div className="grid gap-6">
@@ -449,7 +440,7 @@ export default function Home() {
                  <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
                  <h3 className="text-2xl font-bold mb-6 relative z-10">El Resultado</h3>
                  <p className="text-slate-300 text-xl mb-10 relative z-10 font-medium leading-relaxed">
-                   "Antes de construir software, ordenamos el sistema. Eso hace que lo que se construye tenga sentido."
+                   "Primero ordenamos el sistema. Después lo construimos."
                  </p>
                  <div className="grid grid-cols-2 gap-4 relative z-10">
                     <div className="p-6 bg-white/5 rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-colors">
@@ -483,7 +474,7 @@ export default function Home() {
             <span className="text-emerald-400">ya hay algo para ordenar.</span>
           </h2>
           <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
-            Podemos ayudarte a entender el problema, definir el sistema correcto y construir una solución que tenga sentido para tu negocio.
+            Entendemos el problema, definimos el sistema y construimos la solución.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10">
             <Link
@@ -500,7 +491,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="text-sm text-slate-500 font-medium">
-            Primera conversación breve para entender contexto, detectar oportunidades y evaluar el mejor siguiente paso. O escribinos directo a{' '}
+            Sin compromiso. Una conversación para entender tu contexto. O escribinos a{' '}
             <a href={`mailto:${company.email}`} className="text-emerald-400 hover:underline">
               {company.email}
             </a>
