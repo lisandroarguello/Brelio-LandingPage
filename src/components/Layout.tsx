@@ -14,7 +14,7 @@ const NavLink = ({ to, children, onClick }: { to: string; children: ReactNode; o
       to={to}
       onClick={onClick}
       className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-        isActive ? 'text-white' : 'text-gray-400 hover:text-white'
+        isActive ? 'text-white' : 'text-slate-400 hover:text-white'
       }`}
     >
       {isActive && (
@@ -82,7 +82,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 href={company.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-slate-400 hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -90,7 +90,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             )}
             <Link
               to="/contacto"
-              className="bg-white text-black px-5 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors"
+              className="bg-white text-black px-5 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors"
             >
               Hablemos
             </Link>
@@ -192,8 +192,8 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
 
           <div>
-            <h4 className="font-mono text-sm uppercase text-gray-500 mb-4 tracking-wider">Navegación</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className="font-mono text-sm uppercase text-slate-500 mb-4 tracking-wider">Navegación</h4>
+            <ul className="space-y-2 text-slate-400">
               {navLinks.map((link) => (
                 <li key={link.to}>
                   <Link to={link.to} className="hover:text-primary transition-colors text-sm">
@@ -205,11 +205,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
 
           <div>
-            <h4 className="font-mono text-sm uppercase text-gray-500 mb-4 tracking-wider">Contacto</h4>
+            <h4 className="font-mono text-sm uppercase text-slate-500 mb-4 tracking-wider">Contacto</h4>
             <p className="text-slate-400 text-sm mb-4 leading-relaxed">
               {footerContactBlurb}
             </p>
-            <ul className="space-y-2 text-gray-400 text-sm">
+            <ul className="space-y-2 text-slate-400 text-sm">
               <li>
                 <a href={`mailto:${company.email}`} className="hover:text-primary transition-colors">
                   {company.email}
@@ -228,7 +228,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             </ul>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
+        <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
           © {new Date().getFullYear()} {company.name}. Todos los derechos reservados.
         </div>
       </footer>
