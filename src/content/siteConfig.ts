@@ -19,7 +19,7 @@ export const company = {
   address: "Argentina",
   // URLs de redes sociales
   social: {
-    linkedin: "https://linkedin.com/in/lisandroarguello",
+    linkedin: "https://www.linkedin.com/company/brelio-software/",
     twitter: "",
     instagram: "",
     github: "",

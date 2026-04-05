@@ -76,7 +76,7 @@ export default function Blog() {
           <p className="text-slate-500 text-sm">
             Más artículos próximamente. Seguinos en{' '}
             <a
-              href="https://linkedin.com/in/lisandroarguello"
+              href="https://www.linkedin.com/company/brelio-software/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline"
